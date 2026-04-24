@@ -62,21 +62,44 @@ This tool was built with explicit guardrails to ensure output quality and preven
 
 ## Running the Tool
 
-This is a single-file React component (`api-simplifier.jsx`) that calls the Anthropic API directly.
+There are three ways to run this tool depending on your setup.
+
+---
+
+### Option A — Run as a Claude Artifact (Easiest, No Setup Required)
+
+This is the fastest way to try the tool. You only need a Claude.ai account.
+
+1. Go to [claude.ai](https://claude.ai) and sign in
+2. Start a new conversation
+3. Download `api-simplifier.jsx` from this repo
+4. Drag and drop the file into the Claude chat window
+5. Type: `Please run this as an artifact`
+6. Claude will render the full interactive UI directly in the chat
+
+No API key, no installations, no configuration needed. The tool runs immediately.
+
+> **Note:** Sample inputs to test with are available in `api-simplifier-test-data.md` in this repo.
+
+---
+
+### Option B — Run Locally
 
 **Requirements:**
 - A React environment (Create React App, Vite, or equivalent)
-- An Anthropic API key
+- An Anthropic API key from [console.anthropic.com](https://console.anthropic.com)
 
-**To run locally:**
-
+**Steps:**
 1. Clone this repo
 2. Place `api-simplifier.jsx` in your React project's `src` folder
 3. Import and render the component in your `App.jsx`
-4. Ensure your Anthropic API key is configured in your environment
+4. Add your Anthropic API key as an environment variable
 
-**To deploy:**
-The component can be deployed as a standalone page on Vercel, Netlify, or any static hosting platform that supports React.
+---
+
+### Option C — Deploy as a Live Web App
+
+The component can be deployed as a standalone public URL on Vercel or Netlify. Requires an Anthropic API key configured as an environment variable in your deployment settings.
 
 ---
 
